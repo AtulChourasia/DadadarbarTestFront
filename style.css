@@ -1,0 +1,608 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Ruhl";
+    src: url("/fonts/FrankRuhlLibre-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Ruhl Medium";
+    src: url("/fonts/FrankRuhlLibre-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Vibes";
+    src: url("/fonts/GreatVibes-Regular.ttf");
+}
+
+html {
+    font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(1.5rem + 1vw);
+    --big: calc(6rem + 1vw);
+    --special-color: #906272;
+    --background-color: #414141;
+    --gray-text: #525252;
+    scroll-behavior: smooth;
+}
+h1 {
+    font-size: var(--header1);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+    font-size: var(--text);
+}
+
+h2 {
+    font-size: var(--header2);
+    
+}
+
+h3 {
+    font-size: var(--header3);
+}
+
+h4,
+h5 {
+    font-size: var(--header4);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    z-index: 999;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    font-family: "Ruhl", sans-serif;
+    
+    animation: opening 2s ease-in-out;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Vibes", sans-serif;
+}
+
+li{
+    text-decoration: none;
+}
+
+/* main head */
+ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+}
+.main-head {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    position: relative;
+    min-height:10vh;
+}
+nav {
+    width: 50%;
+    margin-inline-start: 50vw;
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+    min-height: 10vh;
+}
+
+.nav-links {
+    
+    font-family:Vibes;
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 20rem;
+}
+
+.hero {
+    min-height: 101vh;
+    width: 30%;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: absolute;
+    background: #2dca18;
+    z-index: 11;
+}
+
+.hero-introduction {
+    flex: 2 1 40rem;
+    text-align: center;
+    position: absolute;
+}
+
+.hero-introduction p {
+    padding: 3rem 10rem;
+    color: white;
+    margin-top: 20vh;
+}
+
+.hero h2 {
+    padding-top: 1rem;
+    position: absolute;
+    color: white;
+}
+
+.hero-introduction a {
+    color: white;
+    padding: 2rem 8rem;
+    border: 3px solid white;
+    margin-bottom: 4rem;
+}
+.logo{
+    max-height: 10vh;
+    width: 70%;
+    margin-left: 8rem;
+    font-family: 'Lobster',
+    cursive;
+    
+}
+.women{
+   position: absolute;
+   margin-top:105rem;
+   margin-left:auto;
+   
+}
+
+/* maincontent */
+
+.main-cont{
+    margin-left: 30vw;
+    width: 70vw;
+    min-height: 90vh;
+   
+    
+}
+
+.box{
+    padding: 2rem;
+    height: 100%;
+}
+.box1{
+    grid-area: b1;
+    
+
+}
+.box2{
+   grid-area: b2;
+
+    
+}
+
+.box3 {
+    
+   grid-area: b3;
+
+}
+
+.box4 {
+    
+   grid-area: b4;
+   position: sticky;z-index: -1;
+
+}
+
+.box5 {
+    
+   grid-area: b5;
+   
+
+}
+
+.box6 {
+   grid-area: b6;
+
+    
+}
+.box7 {
+    grid-area: b7;
+
+    
+}
+
+.box8 {
+    grid-area: b8;
+
+    
+}
+
+.box9 {
+    grid-area: b9;
+
+    
+}
+.main-cont{
+    overflow: hidden;
+}
+
+.boxes {
+    
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 29vh  29vh 29vh;
+    grid-template-areas: "b1 b1 b2"
+                         "b4 b3 b5"
+                         "b4 b8 b8";
+                         
+}
+.box4 img {
+
+    position: absolute;
+    bottom: -15vh;
+    right: 24vw;
+    z-index: -1;    
+    animation: flower1 5s ease-in-out alternate infinite;
+    transform-origin: right;
+    transform: rotate(120deg);
+
+
+
+}
+
+.box5 img{
+
+    position: absolute;
+   bottom: 30vh;
+   right: -10vh;
+    z-index: -1;
+    animation: flower2 5s ease-in-out alternate infinite;
+    transform-origin: right;
+    transform: rotate(15deg);
+
+
+
+}
+#hands{
+    animation: hands 2s ease-in-out infinite alternate;
+}
+.box3 h1{
+    margin-top: 7rem;
+ color: rgb(212, 23, 23);
+ padding: 2rem 8rem;
+ border: 3px solid rgb(27, 25, 25);
+ margin-bottom: 4rem;
+}
+.box p{
+    font-size: 2.5rem;
+}
+
+@keyframes opening{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes flower1 {
+    from {
+        transform: rotate(150deg);
+       
+      
+    }
+
+    to {
+        transform: rotate(120deg);
+        
+    }
+}
+@keyframes flower11 {
+    from {
+        
+        transform: translateY(-10);
+
+    }
+
+    to {
+        
+        transform: translateY(0);
+    }
+}
+
+@keyframes flower2 {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    to {
+        transform: rotate(15deg);
+
+    }
+}
+@keyframes hands {
+    from {
+        transform: translateY(5%);
+
+    }
+
+    to {
+        transform: translateY(00%);
+
+    }
+}
+
+.events{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.mvf{
+    position: absolute;
+    opacity: 0;
+}
+
+@media screen and (max-width:940px){
+    body{
+      animation: inannimation 3s;
+      
+    }
+@keyframes inannimation {
+    from{
+         background: linear-gradient(rgb(30, 255, 0), rgb(255, 255, 255));
+clip-path: circle(0% at 10% 10%);
+    }
+    to{
+         background: linear-gradient(rgb(30, 255, 0), rgb(255, 255, 255));
+clip-path: circle(100% at 10% 10%);
+    }
+    
+}
+   .mvf{
+       position: absolute;
+       width:30rem;
+       opacity: 1;
+       animation: flower2 7s infinite alternate ease-in-out;
+       transform-origin: right;
+       top:35vh;
+       right:-5vw;
+   }
+    .main-head {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    position: absolute;
+    min-height:10vh;
+    top:.5vh;
+    width: 100vw;
+}
+nav {
+    width: 50%;
+    margin-inline-start: 50vw;
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+    min-height: 10vh;
+}
+
+.nav-links {
+    
+    font-family:Vibes;
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 20rem;
+}
+
+    .hero {
+        min-height: 100vh;
+        width: 100vw;
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        position: static;
+        background: #ffffff;
+        z-index: -12;
+        
+    }
+
+    .hero-introduction {
+        flex: 2 1 40rem;
+        text-align: center;
+        position: absolute;
+    }
+
+    .hero-introduction p {
+        padding: 3rem 10rem;
+        color: rgb(0, 0, 0);
+        margin-top: 20vh;
+    }
+
+    .hero h3 {
+        padding-top: 1rem;
+        position: absolute;
+        color: rgb(0, 0, 0);
+    }
+
+    .hero-introduction a {
+        color: rgb(0, 0, 0);
+        padding: 2rem 8rem;
+        border: 3px solid rgb(0, 0, 0);
+        margin-bottom: 4rem;
+    }
+
+    .logo {
+        max-height: 10vh;
+        width: 20vh;
+        font-family: 'Oleo Script',
+        cursive;
+        text-decoration: underline;
+        justify-content: center;
+        z-index: 10;
+        font-size: .5rem;
+        position: absolute;
+        top: 5.5vh;
+        left: -5rem;
+    }
+.logo h3{
+    margin-left: 10vh;
+}
+    .women {
+        position: absolute;
+        margin-top: 98vh;
+        margin-left: auto;
+
+    }
+
+    /* maincontent */
+
+    .main-cont {
+        margin-left: 5vw;
+        width: 70vw;
+        min-height: 90vh;
+      overflow: scroll;
+
+
+    }
+
+    .box {
+        padding: 2rem;
+        height: 100%;
+    }
+
+    .box1 {
+        grid-area: b1;
+
+
+    }
+
+    .box2 {
+        grid-area: b2;
+
+
+    }
+
+    .box3 {
+
+        grid-area: b3;
+
+    }
+
+    .box4 {
+
+        grid-area: b4;
+        position: sticky;
+        z-index: -1;
+
+    }
+
+    .box5 {
+
+        grid-area: b5;
+
+
+    }
+
+    .box6 {
+        grid-area: b6;
+
+
+    }
+
+    .box7 {
+        grid-area: b7;
+
+
+    }
+
+    .box8 {
+        grid-area: b8;
+
+
+    }
+
+    .box9 {
+        grid-area: b9;
+
+
+    }
+
+    .main-cont {
+        overflow: hidden;
+    }
+
+    .boxes {position: absolute;
+        height: 100vh;
+        top: 150vh;
+        left: 20vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 29vh 29vh 29vh;
+        grid-template-areas: "b1 b1 b2"
+            "b4 b3 b5"
+            "b4 b8 b8";
+
+    }
+
+    .box4 img {
+
+        position: absolute;
+        bottom: -15vh;
+        right: 20vw;
+        z-index: -1;
+        animation: flower1 2s ease-in-out;
+        transform-origin: right;
+        transform: rotate(120deg);
+
+
+
+    }
+
+    .box5 img {
+
+        position: absolute;
+        bottom: 30vh;
+        right: -10vh;
+        z-index: -1;
+        animation: flower2 2s ease-in-out;
+        transform-origin: right;
+        transform: rotate(30deg);
+
+
+
+    }
+
+    #hands {
+        animation: hands 2s ease-in-out infinite alternate;
+    }
+
+    .box3 h1 {
+        margin-top: 7rem;
+        color: rgb(212, 23, 23);
+        padding: 2rem 8rem;
+        border: 3px solid rgb(27, 25, 25);
+        margin-bottom: 4rem;
+    }
+
+    .box p {
+        font-size: 2.5rem;
+    }
+}
